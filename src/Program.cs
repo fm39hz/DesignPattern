@@ -1,4 +1,6 @@
-﻿using DesignPattern.Builder;
+﻿using DesignPattern.Adapter;
+using DesignPattern.Builder;
+using DesignPattern.Facade;
 
 namespace DesignPattern
 {
@@ -6,7 +8,9 @@ namespace DesignPattern
     {
         internal static Dictionary<string, IPattern> Patterns = new()
         {
-            { "Builder Pattern", new BuilderPattern() }
+            { "Builder Pattern", new BuilderPattern() },
+            { "Adapter Pattern", new AdapterPattern() },
+            { "Facade Pattern", new FacadePattern() }
         };
         public static void Main()
         {
